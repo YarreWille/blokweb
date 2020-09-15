@@ -38,11 +38,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Wat goed ging was een goede begin structuur te maken in de HTML door middel van de breakdownschets. Daarnaast heb ik ook goed kunnen kijken wat ik nog moet gebruiker voor de website. Een beetje kijken naar hoe Tele2 gebruik maak van afbeeldingen en andere elementen. Jammer genoeg ben ik nog niet echt begonnen met het opzetten van het mobiel first ontwerp. Dat zou beter kunnen.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot(s) die HTML voortgang laten zien](images/Voortgang-W3-HTML)
+![screenshot(s) die HTML voortgang laten zien](images/Voortgang-W3-HTML2)
 
 ### Agenda voor meeting
 
