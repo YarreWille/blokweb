@@ -42,8 +42,8 @@ Wat goed ging was een goede begin structuur te maken in de HTML door middel van 
 
 **Screenshot(s):**
 
-![screenshot(s) die HTML voortgang laten zien](images/Voortgang-W3-HTML)
-![screenshot(s) die HTML voortgang laten zien](images/Voortgang-W3-HTML2)
+![screenshot(s) die HTML voortgang laten zien](images/Voortgang-W3-HTML.png)
+![screenshot(s) die HTML voortgang laten zien](images/Voortgang-W3-HTML2.png)
 
 ### Agenda voor meeting
 
