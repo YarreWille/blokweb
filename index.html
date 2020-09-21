@@ -12,44 +12,48 @@
 </head>
 
 <body>
-	<script src="scripts/script.js"></script>
+	
 	<header>
-		<a href="/">
-			<img id="logo" src="images/tele2-logo.png" alt="tele2-logo">
-		</a>
-		<nav>
-			<li>Mobiel</li>
-			<li>Internet, TV & Bellen</li>
-			<li>Klantenservice</li>
+		<nav id="header-nav-mobiel">
+			<a class="link-header" href="/">
+				<img id="nav-logo" src="images/tele2-logo.png" alt="tele2-logo">
+			</a>
+			<a class="link-header" href="/">Login</a>
+			<form action="search">Zoeken</form>
+			<a class="link-header" href="/">Mandje</a>
 		</nav>
-		<a href="/">LOGIN</a>
-		<form action="search">ZOEKEN</form>
-		<a href="shopping-cart"></a>
+		<nav id="hamburger-menu">
+			<ul id="nav-ul">
+				<li>Mobiel</li>
+				<li>Internet, TV & Bellen</li>
+				<li>Klantenservice</li>
+			</ul>
+		</nav>
 	</header>
 	<main>
 		<section id="s1">
-			<h1>SIM ONLY UNLIMITED</h1>
-			<ul>
+			<h1 id="h1s1">SIM ONLY <br> <span style="color: gold">UNLIMITED</span></h1>
+			<ul id="uls1">
 				<li>Unlimited Data/Bel/SMS</li>
 				<li>Streamen tot je een ons weegt</li>
 				<li>De beste dat vind je bij Tele2</li>
 			</ul>
-			<a href="/">Shop Sim Only</a>
-			<img src="/" alt="/">
+			<img id="sim-only-img" src="images/sim-only-img.png" alt="sim-only-img">
+			<a id="section1-link" href="/">Shop Sim Only</a>
 		</section>
 		<section id="s2">
-			<ul>
-				<li>
-					<a href="/">Smartphone abonnement</a>
+			<ul id="uls2">
+				<li id="li1s2">
+					<a class="as2" href="/">Smartphone abonnement</a>
 				</li>
-				<li>
-					<a href="/">Sim Only abonnoment</a>
+				<li id="li2s2">
+					<a class="as2" href="/">Sim Only abonnoment</a>
 				</li>
-				<li>
-					<a href="/">Abonnoment verlengen</a>
+				<li id="li3s2">
+					<a class="as2" href="/">Abonnoment verlengen</a>
 				</li>
-				<li>
-					<a href="/">Internet, TV & Bellen</a>
+				<li id="li4s2">
+					<a class="as2" href="/">Internet, TV & Bellen</a>
 				</li>
 			</ul>
 		</section>
@@ -60,8 +64,8 @@
 				<li>A13 Bionic processor</li>
 				<li>De beste deal vind je bij Tele2</li>
 			</ul>
-			<a href="/">Shop de iphone 11</a>
 			<img src="/" alt="/">
+			<a href="/">Shop de iphone 11</a>
 		</section>
 		<section id="s4">
 			<h1>SAMNSUNG GALAXY S20</h1>
@@ -70,8 +74,8 @@
 				<li>40 MP selfie camera</li>
 				<li>Trek het internet helemaal leeg</li>
 			</ul>
-			<a href="/">Shop de Galaxy S20</a>
 			<img src="/" alt="/">
+			<a href="/">Shop de Galaxy S20</a>
 		</section>
 		<section id="s5">
 			<h1>APPLE IPHONE SE</h1>
@@ -80,8 +84,8 @@
 				<li>Inclusief 1 jaar gratis Apple TV+</li>
 				<li>Genadeloos lage prijs</li>
 			</ul>
-			<a href="/">Shop de iphone SE</a>
 			<img src="/" alt="/">
+			<a href="/">Shop de iphone SE</a>
 		</section>
 		<section id="s6">
 			<h1>SAMSUNG GALAXY A51</h1>
@@ -90,8 +94,8 @@
 				<li>7GB Data & 200 Bel/SMS</li>
 				<li>Trek't internet helemaal leeg</li>
 			</ul>
-			<a href="/">Shop de Galaxy A51</a>
 			<img src="/" alt="/">
+			<a href="/">Shop de Galaxy A51</a>
 		</section>
 		<section id="s7">
 			<h1>INTERNET VANAF 20€ /MND</h1>
@@ -100,8 +104,8 @@
 				<li>Internet tot 20 MB/s inclusief wifi</li>
 				<li>Aleen internet, een slimme eigentijdse keuze</li>
 			</ul>
-			<a href="/">Shop internet Thuis</a>
 			<img src="/" alt="/">
+			<a href="/">Shop internet Thuis</a>
 		</section>
 		<section id="s8">
 			<h1>TELE2 VRIENDENVOORDEEL</h1>
@@ -128,7 +132,9 @@
 	<footer>
 		<section>
 			<ul>
-				<h2>Mobiel</h2>
+				<li>
+					<h2>Mobiel</h2>
+				</li>
 				<li>Mobiel abonnement</li>
 				<li>Mobiele telefoons</li>
 				<li>obiel internet</li>
@@ -136,7 +142,9 @@
 				<li>Verlengen</li>
 			</ul>
 			<ul>
-				<h2>Thuis</h2>
+				<li>
+					<h2>Thuis</h2>
+				</li>
 				<li>Internet, Bellen & TV</li>
 				<li>Internet & Bellen</li>
 				<li>Internet & TV</li>
@@ -144,13 +152,17 @@
 				<li>Postcodecheck</li>
 			</ul>
 			<ul>
-				<h2>Service</h2>
+				<li>
+					<h2>Service</h2>
+				</li>
 				<li>Klantenservice</li>
 				<li>Contact</li>
 				<li>Storingen en onderhoud</li>
 			</ul>
 			<ul>
-				<h2>Social</h2>
+				<li>
+					<h2>Social</h2>
+				</li>
 				<li>Forum</li>
 				<li>Twitter Tele2Nederland</li>
 				<li>Facebook Tele2Nederland</li>
@@ -175,5 +187,6 @@
 			<p>Copyright Tele2 Nederland</p>
 		</section>
 	</footer>
+	<script src="scripts/script.js"></script>
 </body>
 </html>
