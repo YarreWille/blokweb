@@ -8,17 +8,16 @@ body{
 	width: 100%;
 	margin: 0;
 
+
 }
 
 main{
-	position: relative;
 	width: 100%;
 }
 
 main header{
 	border: 1px solid black;
 	width: 100%;
-	position: sticky;
 }
 
 /*mobiel nav bar in de header*/
@@ -147,29 +146,33 @@ form{
 	font-size: 1.15em;
 	display: grid;
 	grid-template-columns: 5% 1fr 5%;
-  	grid-template-rows: 10% 20% 20% 25% 15% 10%;
+  	grid-template-rows: 5% 20% 20% 35% 15% 5%;
+  	align-items: center;
 
 }
 
  main section:first-of-type h1{
-	margin:10px;
+	margin:1rem;
 	grid-column: 2/3;
 	grid-row: 2;
 }
 
 main section:first-of-type ul{
-	margin:10px;
+	margin:1rem;
 	padding: 0px;
 	grid-column: 2 / 3;
 	grid-row: 3;
 }
 
 img#sim-only-img{
+	margin: 1rem;
+	display: inline-block;
 	height: auto;
 	width: 250px;
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
+	justify-self:center;
 }
 
 a#section1-link{
@@ -189,6 +192,7 @@ a#section1-link{
 /* section 2 */
 
  main section:nth-of-type(2){
+ 	margin:1em;
 	display: grid;
 	grid-template-columns: 2.5% 1fr 2.5%;
 	grid-template-rows: 5% 4fr 4fr 4fr 4fr 5% ;
@@ -251,18 +255,19 @@ main section:nth-of-type(3) {
 	font-size: 1.15em;
 	display: grid;
 	grid-template-columns: 5% 1fr 5%;
-  	grid-template-rows: 10% 20% 20% 25% 15% 10%;
+  	grid-template-rows: 5% 20% 20% 35% 15% 5%;
+  	align-items: center;
 
 }
 
 main section:nth-of-type(3) h1{
-	margin:10px;
+	margin:1rem;
 	grid-column: 2/3;
 	grid-row: 2;
 }
 
 main section:nth-of-type(3) ul{
-	margin:10px;
+	margin:1rem;
 	padding: 0px;
 	grid-column: 2 / 3;
 	grid-row: 3;
@@ -274,6 +279,7 @@ img#iphone11-img{
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
+	justify-self:center;
 }
 
 a#section3-link{
@@ -300,18 +306,19 @@ main section:nth-of-type(4) {
 	font-size: 1.15em;
 	display: grid;
 	grid-template-columns: 5% 1fr 5%;
-  	grid-template-rows: 10% 20% 20% 25% 15% 10%;
+  	grid-template-rows: 5% 20% 20% 35% 15% 5%;
+  	align-items: center;
 
 }
 
 main section:nth-of-type(4) h1{
-	margin:10px;
+	margin:1rem;
 	grid-column: 2/3;
 	grid-row: 2;
 }
 
 main section:nth-of-type(4) ul{
-	margin:10px;
+	margin:1rem;
 	padding: 0px;
 	grid-column: 2 / 3;
 	grid-row: 3;
@@ -323,6 +330,7 @@ img#galaxy-s20-img{
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
+	justify-self:center;
 }
 
 a#section4-link{
@@ -347,18 +355,19 @@ main section:nth-of-type(5) {
 	font-size: 1.15em;
 	display: grid;
 	grid-template-columns: 5% 1fr 5%;
-  	grid-template-rows: 10% 20% 20% 25% 15% 10%;
+  	grid-template-rows: 5% 20% 20% 35% 15% 5%;
+  	align-items: center;
 
 }
 
 main section:nth-of-type(5) h1{
-	margin:10px;
+	margin:1rem;
 	grid-column: 2/3;
 	grid-row: 2;
 }
 
 main section:nth-of-type(5) ul{
-	margin:10px;
+	margin:1rem;
 	padding: 0px;
 	grid-column: 2 / 3;
 	grid-row: 3;
@@ -370,6 +379,7 @@ img#iphoneSE-img{
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
+	justify-self:center;
 }
 
 a#section5-link{
@@ -394,18 +404,19 @@ main section:nth-of-type(6) {
 	font-size: 1.15em;
 	display: grid;
 	grid-template-columns: 5% 1fr 5%;
-  	grid-template-rows: 10% 20% 20% 25% 15% 10%;
+  	grid-template-rows: 5% 20% 20% 35% 15% 5%;
+  	align-items: center;
 
 }
 
 main section:nth-of-type(6) h1{
-	margin:10px;
+	margin:1rem;
 	grid-column: 2/3;
 	grid-row: 2;
 }
 
 main section:nth-of-type(6) ul{
-	margin:10px;
+	margin:1rem;
 	padding: 0px;
 	grid-column: 2 / 3;
 	grid-row: 3;
@@ -417,6 +428,7 @@ img#samsung-a51-img{
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
+	justify-self:center;
 }
 
 a#section6-link{
@@ -441,18 +453,18 @@ main section:nth-of-type(7) {
 	font-size: 1.15em;
 	display: grid;
 	grid-template-columns: 5% 1fr 5%;
-  	grid-template-rows: 10% 20% 20% 25% 15% 10%;
-
+  	grid-template-rows: 5% 20% 20% 35% 15% 5%;
+  	align-items: center;
 }
 
 main section:nth-of-type(7) h1{
-	margin:10px;
+	margin:1rem;
 	grid-column: 2/3;
 	grid-row: 2;
 }
 
 main section:nth-of-type(7) ul{
-	margin:10px;
+	margin:1rem;
 	padding: 0px;
 	grid-column: 2 / 3;
 	grid-row: 3;
@@ -464,6 +476,7 @@ img#internet-vanaf20-img{
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
+	justify-self:center;
 }
 
 a#section7-link{
@@ -489,18 +502,18 @@ main section:nth-of-type(8) {
 	font-size: 1.15em;
 	display: grid;
 	grid-template-columns: 5% 1fr 5%;
-  	grid-template-rows: 10% 20% 20% 25% 15% 10%;
-
+  	grid-template-rows: 5% 20% 20% 35% 15% 5%;
+  	align-items: center;
 }
 
 main section:nth-of-type(8) h1{
-	margin:10px;
+	margin:1rem;
 	grid-column: 2/3;
 	grid-row: 2;
 }
 
 main section:nth-of-type(8) p{
-	margin:10px;
+	margin:1rem;
 	padding: 0px;
 	grid-column: 2 / 3;
 	grid-row: 3;
@@ -512,6 +525,7 @@ img#vriendenvoordeel-img{
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
+	justify-self:center;
 }
 
 a#section8-link{
@@ -531,6 +545,7 @@ a#section8-link{
 /*section9*/
 
 main section:nth-of-type(9n){
+	margin: 1em;
 	display: grid;
 	grid-template-columns: 2.5% 1fr 2.5%;
 	grid-template-rows: 5% 4fr 4fr 4fr 4fr 5% ;
