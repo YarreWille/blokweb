@@ -1,0 +1,60 @@
+/
+
+
+/header .menu-icon #nav-icon{
+	background: #333;
+	display: block;
+	height: 2px;
+	width:18px;
+	position: relative;
+}
+
+/header .menu-icon #nav-icon:before{
+	background: #333;
+	display: block;
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:5px;
+
+}
+
+/header .menu-icon #nav-icon:after{
+	background: #333;
+	display: block;
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:-5px;
+
+}
+
+/header .menu-button{
+	display: none;
+}
+
+/header .menu-button:checked ~  #header-ul{
+	max-height: 240px;
+}
+
+/*desktop nav bar in de header*/
+
+header #header-ul{
+	clear: both;
+	max-height: 0;
+	padding: 0;
+	margin:0;
+	overflow: hidden;
+	transition: max-height .2s ease-out;
+
+}
+
+a.link-header{
+	display: block;
+	padding:1em;
+	text-decoration: none;
+	color: black;
+	border-right: 1px solid grey;
+}
