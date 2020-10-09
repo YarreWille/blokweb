@@ -15,9 +15,30 @@ main{
 	width: 100%;
 }
 
+/*Header overige*/
+
 main header{
 	border: 1px solid black;
 	width: 100%;
+}
+
+a.link-header{
+	display: block;
+	padding:1.2em 0.5em 1em 0.5em;
+	text-decoration: none;
+	color: black;
+} 
+
+li{
+	list-style-type: none;
+}
+
+section li:before{
+	content: "\2714";
+}
+
+form{
+	margin:1.2em 1em 1em 1em;
 }
 
 /*mobiel nav bar in de header*/
@@ -25,62 +46,57 @@ main header{
 #link-logo{
 	float: left;
 	display: block;
-	padding: 10px 20px;
+	padding: 0.9em 0.7em 1.2em 0.9em;
 }
 
 #nav-logo{
-	width: 70px;
-	height: 40px;
+	width: 4em;
+	height: auto;
 	padding: 2px;
 }
 
 nav{
 	display: flex;
-}
-
-header .menu-icon{
-	padding:1em;
 	position: relative;
-	float: right;
-
+	padding-top: 0.5em;
 }
 
-header .menu-icon #nav-icon{
-	background: #333;
-	display: block;
-	height: 2px;
-	width:18px;
-	position: relative;
-}
-
-header .menu-icon #nav-icon:before{
-	background: #333;
-	display: block;
-	content: "";
+header nav button{
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	top:5px;
-
+	left:1;
+	right: 1.5em;
+	padding-top: 1em;
+	background-color: white;
+	border: none;
 }
 
-header .menu-icon #nav-icon:after{
-	background: #333;
-	display: block;
-	content: "";
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top:-5px;
-
+header nav button img{
+	width: 2.5em;
+	height: auto;
+	background-color: white;
+	border: none;
 }
 
-header .menu-button{
+
+/*Humburger icon*/
+body header ul{
 	display: none;
+	border-top: 1px solid grey;
+	padding: 0;
+	transition: 2s;
 }
 
-header .menu-button:checked ~  #header-ul{
-	max-height: 240px;
+body header ul.open{
+	display: block;
+	margin:0;
+}
+
+header ul li a.link-header{
+	display: block;
+	padding:1.5em 0.5em 1.5em 1em;
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid grey;
 }
 
 /*desktop nav bar in de header*/
@@ -100,40 +116,6 @@ header .menu-button:checked ~  #header-ul{
 		display: none;
 	}
 }
-
-/*desktop nav bar in de header*/
-
-header #header-ul{
-	clear: both;
-	max-height: 0;
-	padding: 0;
-	margin:0;
-	overflow: hidden;
-	transition: max-height .2s ease-out;
-
-}
-
-a.link-header{
-	display: block;
-	padding:1em;
-	text-decoration: none;
-	color: black;
-	border-right: 1px solid grey;
-}
-
-
-li{
-	list-style-type: none;
-}
-
-section li:before{
-	content: "\2714";
-}
-
-form{
-	margin:1em;
-}
-
 
 
 /* section 1 */
@@ -596,5 +578,88 @@ main section:nth-of-type(9n) a:nth-of-type(4n) {
 	grid-row: 5;
 	background-color: rgba(103,41,126,1);
 	box-shadow: 0px 4px rgba(82,33,101,1);
+}
+
+
+/*footer*/
+
+
+footer ul{
+	margin: 0;
+	padding: 1em;
+}
+
+footer li:before{
+	content: none;
+}
+
+footer p{
+	margin: 0;
+	padding-bottom: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+/*footer section1*/
+
+footer section:first-of-type{
+	background-color: rgba(21,21,21,1);
+	color: white;
+}
+
+footer section:first-of-type ul{
+	padding: 1em 0em 1em 0em;
+}
+
+footer section:first-of-type ul li{
+	padding: 0em 1em 0em 0.5em;
+	margin-bottom: 0.7em;
+}
+
+footer section:first-of-type ul button{
+	display: block;
+	padding: 0.5em 0.5em 0.5em 0.4em;
+	margin: 0;
+	border: 0;
+	color: white;
+	text-decoration: none;
+	background-color: rgba(21,21,21,1);
+	font-size: 120%;
+}
+
+footer section:first-of-type ul li ul{
+	display: none;
+	transition: 2s;
+	background-color: rgba(21,21,21,1);
+	padding: 0;
+}
+
+footer section:first-of-type ul li ul.anders{
+	display: block;
+}
+
+footer section:first-of-type ul li ul li{
+	padding: 0.5em;
+	margin: 0;
+	color: grey;
+}
+
+
+/*footer section2*/
+
+footer section:nth-of-type(2n){
+	background-color: rgba(0,0,0,1);
+	color: rgba(138,138,138,1);
+
+}
+
+footer section:nth-of-type(2n) ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+footer section:nth-of-type(2n) li{
+	padding: 0.4em;
 }
 

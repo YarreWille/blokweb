@@ -6,8 +6,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. -( https://www.youtube.com/watch?v=nxyk6yKD56c )-
+2. -( https://www.youtube.com/watch?v=sjrp1FEHnyA&t=221s )-
 3. -...-
 
 
