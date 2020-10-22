@@ -4,11 +4,9 @@
 }
 
 body{
-	font-family: Patua One;
+	font-family: Patua One, sans-serif;
 	width: 100%;
 	margin: 0;
-
-
 }
 
 main{
@@ -17,9 +15,12 @@ main{
 
 /*Header overige*/
 
-main header{
-	border: 1px solid black;
+header{
+	background-color: white;
 	width: 100%;
+	position: sticky;
+	border: 1px solid lightgrey;
+	top: 0;
 }
 
 a.link-header{
@@ -68,6 +69,7 @@ header nav button{
 	padding-top: 1em;
 	background-color: white;
 	border: none;
+	outline: none; 
 }
 
 header nav button img{
@@ -91,7 +93,7 @@ body header ul.open{
 	margin:0;
 }
 
-header ul li a.link-header{
+header ul li a{
 	display: block;
 	padding:1.5em 0.5em 1.5em 1em;
 	text-decoration: none;
@@ -102,18 +104,63 @@ header ul li a.link-header{
 /*desktop nav bar in de header*/
 
 @media(min-width: 980px){
-	header li{
-		float: left;
+	header{
+		position: sticky;
+		display: flex;
+		padding: 1em;
+		font-size: 1.1em;
 	}
 
-	header #header-ul{
-		clear: none;
-		float: right;
-		max-height: none;
+	header nav{
+		width: 100%;
 	}
 
-	header .menu-icon{
+	header nav a:nth-of-type(2){
+		position: absolute;
+		right: 14em;
+	}
+
+	header nav a:nth-of-type(3){
+		position: absolute;
+		right: 2em;
+	}
+
+	header nav form{
+		position: absolute;
+		right: 7.5em;
+	}
+
+	header ul#header-ul{
+		position: absolute;
+		left: 7em;
+		right: 0;
+		display: flex;
+		border: none;
+		margin: 0;
+		padding-top: 0.5em;
+
+	}
+
+	header ul li.niet-in-desktop{
 		display: none;
+	}
+
+	header ul li a{
+		border: none;
+	}
+
+	header nav button{
+		display: none;
+	}
+
+	body header ul{
+		display: block;
+	}
+}
+
+/@media(min-width: 1200px){
+	header{
+		padding: 0 10em 0 10em;
 	}
 }
 
@@ -150,7 +197,7 @@ img#sim-only-img{
 	margin: 1rem;
 	display: inline-block;
 	height: auto;
-	width: 250px;
+	width: 15.5em;
 	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 4;
@@ -170,24 +217,52 @@ a#section1-link{
 	box-shadow: 0px 4px rgba(192,164,11,1);
 }
 
+@media(min-width: 980px){
+	main section:first-of-type  {
+		display: grid;
+		grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  		grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  		font-size: 1.4em;
+}
+	main section:first-of-type h1{
+		grid-column: 2/3;
+		grid-row: 2;
+}
+
+main section:first-of-type ul{
+		grid-column-start: 2;
+		grid-row: 3;
+		margin: 1em;
+}
+
+img#sim-only-img{
+		grid-column-start: 3;
+		grid-row: 2 / 5;
+		width: 20em;
+		margin: 0;
+}
+
+a#section1-link{
+		grid-column: 2 / 3;
+		grid-row-start: 4;
+		padding: 1em;
+}
+}
+
 
 /* section 2 */
 
  main section:nth-of-type(2){
- 	margin:1em;
-	display: grid;
-	grid-template-columns: 2.5% 1fr 2.5%;
-	grid-template-rows: 5% 4fr 4fr 4fr 4fr 5% ;
-	grid-gap: 1em;
+ 	margin:3em 0.3em 3em 0.3em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	background-color: white;
 }
 
-ul#uls2{
-	padding: 0px;
-	margin: auto;
-	
+main section:nth-of-type(2) h2{
+	display: none;
 }
-
 
 a.as2{
 	text-decoration: none;
@@ -197,36 +272,45 @@ a.as2{
 	border-radius: 5px;
 	text-align: center;
 	text-transform: uppercase;
+	margin: 0.7em;
 }
 
 main section:nth-of-type(2) a:first-of-type {
-	grid-column: 2;
-	grid-row: 2;
 	background-color: rgba(68,158,217,1);
 	box-shadow: 0px 4px rgba(54,127,174,1);
 }
 
 main section:nth-of-type(2) a:nth-of-type(2n) {
-	grid-column: 2;
-	grid-row: 3;
 	background-color: rgba(36,94,178,1);
 	box-shadow: 0px 4px rgba(29,76,142,1);
 }
 
 main section:nth-of-type(2) a:nth-of-type(3n) {
-	grid-column: 2;
-	grid-row: 4;
 	background-color: rgba(194,47,123,1);
 	box-shadow: 0px 4px rgba(155,38,98,1);
 }
 
 main section:nth-of-type(2) a:nth-of-type(4n) {
-	grid-column: 2;
-	grid-row: 5;
 	background-color: rgba(103,41,126,1);
 	box-shadow: 0px 4px rgba(82,33,101,1);
 }
 
+@media(min-width: 980px){
+	main section:nth-of-type(2){
+	margin:4em 6em 4em 6em;
+	flex-direction: row;
+	justify-content: space-around;
+}
+	a.as2{
+		flex-basis: 30em;
+}
+}
+
+@media(min-width: 1200px){
+	main section:nth-of-type(2){
+	flex-wrap: nowrap;
+}
+}
 
 /* section 3 */
 
@@ -275,6 +359,38 @@ a#section3-link{
 	grid-row-start: 5;
 	border-radius: 5px;
 	box-shadow: 0px 4px rgba(10,56,128,1);
+}
+
+@media(min-width: 980px){
+	main section:nth-of-type(3)  {
+		display: grid;
+		grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  		grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  		font-size: 1.4em;
+}
+	main section:nth-of-type(3) h1{
+		grid-column: 3/4;
+		grid-row: 2;
+}
+
+	main section:nth-of-type(3) ul{
+		grid-column-start: 3;
+		grid-row: 3;
+		margin: 1em;
+}
+
+	img#iphone11-img{
+		grid-column-start: 2;
+		grid-row: 2 / 5;
+		width: 20em;
+		margin: 0;
+}
+
+	a#section3-link{
+		grid-column: 3 / 4;
+		grid-row-start: 4;
+		padding: 1em;
+}
 }
 
 
@@ -328,6 +444,38 @@ a#section4-link{
 	box-shadow: 0px 4px rgba(10,56,128,1);
 }
 
+@media(min-width: 980px){
+	main section:nth-of-type(4)  {
+		display: grid;
+		grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  		grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  		font-size: 1.4em;
+}
+	main section:nth-of-type(4) h1{
+		grid-column: 2/3;
+		grid-row: 2;
+}
+
+	main section:nth-of-type(4) ul{
+		grid-column-start: 2;
+		grid-row: 3;
+		margin: 1em;
+}
+
+	img#galaxy-s20-img{
+		grid-column-start: 3;
+		grid-row: 2 / 5;
+		width: 20em;
+		margin: 0;
+}
+
+	a#section4-link{
+		grid-column: 2 / 3;
+		grid-row-start: 4;
+		padding: 1em;
+}
+}
+
 /* section 5 */
 
 main section:nth-of-type(5) {
@@ -375,6 +523,38 @@ a#section5-link{
 	grid-row-start: 5;
 	border-radius: 5px;
 	box-shadow: 0px 4px rgba(192,164,11,1);
+}
+
+@media(min-width: 980px){
+	main section:nth-of-type(5)  {
+		display: grid;
+		grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  		grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  		font-size: 1.4em;
+}
+	main section:nth-of-type(5) h1{
+		grid-column: 3/4;
+		grid-row: 2;
+}
+
+	main section:nth-of-type(5) ul{
+		grid-column-start: 3;
+		grid-row: 3;
+		margin: 1em;
+}
+
+	img#iphoneSE-img{
+		grid-column-start: 2;
+		grid-row: 2 / 5;
+		width: 20em;
+		margin: 0;
+}
+
+	a#section5-link{
+		grid-column: 3 / 4;
+		grid-row-start: 4;
+		padding: 1em;
+}
 }
 
 /* section 6 */
@@ -426,6 +606,38 @@ a#section6-link{
 	box-shadow: 0px 4px rgba(10,56,128,1);
 }
 
+@media(min-width: 980px){
+	main section:nth-of-type(6)  {
+		display: grid;
+		grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  		grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  		font-size: 1.4em;
+}
+	main section:nth-of-type(6) h1{
+		grid-column: 2/3;
+		grid-row: 2;
+}
+
+	main section:nth-of-type(4) ul{
+		grid-column-start: 2;
+		grid-row: 3;
+		margin: 1em;
+}
+
+	img#samsung-a51-img{
+		grid-column-start: 3;
+		grid-row: 2 / 5;
+		width: 20em;
+		margin: 0;
+}
+
+	a#section6-link{
+		grid-column: 2 / 3;
+		grid-row-start: 4;
+		padding: 1em;
+}
+}
+
 /* section 7 */
 
 main section:nth-of-type(7) {
@@ -472,6 +684,38 @@ a#section7-link{
 	grid-row-start: 5;
 	border-radius: 5px;
 	box-shadow: 0px 4px rgba(10,56,128,1);
+}
+
+@media(min-width: 980px){
+	main section:nth-of-type(7)  {
+		display: grid;
+		grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  		grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  		font-size: 1.4em;
+}
+	main section:nth-of-type(7) h1{
+		grid-column: 3/4;
+		grid-row: 2;
+}
+
+	main section:nth-of-type(7) ul{
+		grid-column-start: 3;
+		grid-row: 3;
+		margin: 1em;
+}
+
+	img#internet-vanaf20-img{
+		grid-column-start: 2;
+		grid-row: 2 / 5;
+		width: 20em;
+		margin: 0;
+}
+
+	a#section7-link{
+		grid-column: 3 / 4;
+		grid-row-start: 4;
+		padding: 1em;
+}
 }
 
 
@@ -523,24 +767,51 @@ a#section8-link{
 	box-shadow: 0px 4px rgba(192,164,11,1);
 }
 
+@media(min-width: 980px){
+	main section:nth-of-type(8)  {
+		display: grid;
+		grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  		grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  		font-size: 1.4em;
+}
+	main section:nth-of-type(8) h1{
+		grid-column: 2/3;
+		grid-row: 2;
+}
+
+	main section:nth-of-type(8) ul{
+		grid-column-start: 2;
+		grid-row: 3;
+		margin: 1em;
+}
+
+	img#vriendenvoordeel-img{
+		grid-column-start: 3;
+		grid-row: 2 / 5;
+		width: 20em;
+		margin: 0;
+}
+
+	a#section8-link{
+		grid-column: 2 / 3;
+		grid-row-start: 4;
+		padding: 1em;
+}
+}
 
 /*section9*/
 
 main section:nth-of-type(9n){
-	margin: 1em;
-	display: grid;
-	grid-template-columns: 2.5% 1fr 2.5%;
-	grid-template-rows: 5% 4fr 4fr 4fr 4fr 5% ;
-	grid-gap: 1em;
+	margin:3em 0.3em 3em 0.3em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	background-color: white;
 }
 
-ul#uls2{
-	padding: 0px;
-	margin: auto;
-	
+section:nth-of-type(9n) h2{
+	display: none;
 }
-
 
 a.as9{
 	text-decoration: none;
@@ -550,39 +821,48 @@ a.as9{
 	border-radius: 5px;
 	text-align: center;
 	text-transform: uppercase;
+	margin: 0.7em;
 }
 
 main section:nth-of-type(9n) a:first-of-type {
-	grid-column: 2;
-	grid-row: 2;
 	background-color: rgba(68,158,217,1);
 	box-shadow: 0px 4px rgba(54,127,174,1);
 }
 
 main section:nth-of-type(9n) a:nth-of-type(2n) {
-	grid-column: 2;
-	grid-row: 3;
 	background-color: rgba(36,94,178,1);
 	box-shadow: 0px 4px rgba(29,76,142,1);
 }
 
 main section:nth-of-type(9n) a:nth-of-type(3n) {
-	grid-column: 2;
-	grid-row: 4;
 	background-color: rgba(194,47,123,1);
 	box-shadow: 0px 4px rgba(155,38,98,1);
 }
 
 main section:nth-of-type(9n) a:nth-of-type(4n) {
-	grid-column: 2;
-	grid-row: 5;
 	background-color: rgba(103,41,126,1);
 	box-shadow: 0px 4px rgba(82,33,101,1);
 }
 
+@media(min-width: 980px){
+	main section:nth-of-type(9){
+	margin:4em 6em 4em 6em;
+	flex-direction: row;
+	justify-content: space-around;
+}
+	a.as9{
+	flex-basis: 30em;
+}
+}
+
+@media(min-width: 1200px){
+	main section:nth-of-type(9){
+	flex-wrap: nowrap;
+}
+}
+
 
 /*footer*/
-
 
 footer ul{
 	margin: 0;
@@ -607,6 +887,10 @@ footer section:first-of-type{
 	color: white;
 }
 
+footer section:first-of-type h2{
+	display: none;
+}
+
 footer section:first-of-type ul{
 	padding: 1em 0em 1em 0em;
 }
@@ -625,6 +909,7 @@ footer section:first-of-type ul button{
 	text-decoration: none;
 	background-color: rgba(21,21,21,1);
 	font-size: 120%;
+	outline: none;
 }
 
 footer section:first-of-type ul li ul{
@@ -644,13 +929,27 @@ footer section:first-of-type ul li ul li{
 	color: grey;
 }
 
+@media(min-width: 980px){
+	footer section:first-of-type ul{
+	display: flex;
+	justify-content: space-around;
+	padding: 3em 3.5em 3em 3.5em;
+}
+	footer section:first-of-type ul li ul{
+	display: block;
+}
+}
+
 
 /*footer section2*/
 
 footer section:nth-of-type(2n){
 	background-color: rgba(0,0,0,1);
 	color: rgba(138,138,138,1);
+}
 
+footer section:nth-of-type(2n) h2{
+	display: none;
 }
 
 footer section:nth-of-type(2n) ul{
@@ -662,4 +961,8 @@ footer section:nth-of-type(2n) ul{
 footer section:nth-of-type(2n) li{
 	padding: 0.4em;
 }
+
+
+
+
 

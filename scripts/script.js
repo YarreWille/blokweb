@@ -1,6 +1,5 @@
 // JavaScript Document
 
-
 //hamburger menu//
 var hamburger 
 hamburger = document.querySelector("header nav button");
