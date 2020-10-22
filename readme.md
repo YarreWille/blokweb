@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur: Yarre Wille** -jouw naam-
+**Auteur: Yarre Wille**
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -9,12 +9,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 1. -( https://www.youtube.com/watch?v=nxyk6yKD56c )-
 2. -( https://www.youtube.com/watch?v=sjrp1FEHnyA&t=221s )-
 3. -( https://www.youtube.com/watch?v=swWeWesZVZU )-
-
+4. -( https://www.youtube.com/watch?v=PuOGBacTYAY )-
+5. -( https://flexboxfroggy.com/#nl )-
+6. -( https://codepip.com/games/grid-garden/ )-
 
 
 ## Eindgesprek (week 7/8)
 
-Na week 6 ben ik vooral bezig geweest met het afronden van de eerste pagina. Ik heb veel tijd besteed aan het maken van de buttons in de header en footer die moeten veranderen van mobiel naar desktop. JS is voor mij soms nog best lastig maar uiteindelijk lukte het wel. Ik wou eerst de 1e pagina helemaal af maken zodat ik daarna gemakkelijker kon werken aan de 2e pagina. De header en footer zijn namelijk hetzelfde en kon ik zo dus overnemen. Nadat ik de 1e pagina zo goed mogelijk heb geprobeerd af te ronden en zo netjes mogelijk te maken ben ik begonnen met het maken van de 2e pagina. Deze heb ik ook responze gemaakt. Ik merkte wel heel erg dat door het werk van de afgelopen weken en het maken van pagina1 alles een stuk soepeler gingen en ik de code ook veel beter begreep.
+Na week 6 ben ik vooral bezig geweest met het afronden van de eerste pagina. Ik heb veel tijd besteed aan het maken van de buttons in de header en footer die moeten veranderen van mobiel naar desktop. JS is voor mij soms nog best lastig maar uiteindelijk lukte het wel. Ik wou eerst de 1e pagina helemaal af maken zodat ik daarna gemakkelijker kon werken aan de 2e pagina. De header en footer zijn namelijk hetzelfde en kon ik zo dus overnemen. Nadat ik de 1e pagina zo goed mogelijk heb geprobeerd af te ronden en zo netjes mogelijk te maken ben ik begonnen met het maken van de 2e pagina. Deze heb ik ook responze gemaakt en ik heb een kleine animatie toegevoegd in de h1. Ik merkte wel heel erg dat door het werk van de afgelopen weken en het maken van pagina1 alles een stuk soepeler gingen en ik de code ook veel beter begreep.
 
 **Screenshot(s):**
 

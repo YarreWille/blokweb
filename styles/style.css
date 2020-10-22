@@ -923,6 +923,10 @@ footer section:first-of-type ul li ul.anders{
 	display: block;
 }
 
+footer section:first-of-type ul li button.anders{
+	
+}
+
 footer section:first-of-type ul li ul li{
 	padding: 0.5em;
 	margin: 0;

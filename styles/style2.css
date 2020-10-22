@@ -158,12 +158,6 @@ header ul li a{
 	}
 }
 
-/@media(min-width: 1200px){
-	header{
-		padding: 0 10em 0 10em;
-	}
-}
-
 
 
 /*main*/
@@ -191,6 +185,28 @@ section#pagina2-S1 h1{
 	font-size: 2.3em;
 }
 
+section#pagina2-S1 h1 span.typing{
+	position: relative;
+}
+
+section#pagina2-S1 h1 span.typing::after{
+	content: "";
+	position: absolute;
+	right: -0.2em;
+	height: 1.25em;
+	border-right: 0.1em solid white;
+	animation: animation 0.5s infinite ease;
+}
+
+@keyframes animation{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
 
 section#pagina2-S1 p:nth-of-type(2){
 	margin: 0;
@@ -208,7 +224,6 @@ section#pagina2-S1 section a{
 	margin: 0;
 	color: white;
 	justify-content: center;
-	/text-align: center;
 	padding: 1.5em 0.5em 1.5em 0.5em;
 	margin: 1em;
 	font-size: 1.1em;
@@ -232,6 +247,10 @@ section#pagina2-S1 section a:nth-of-type(2){
 		margin: 0;
 		padding: 1em 10em 0em 10em;
 		text-align: center;
+	}
+
+	section#pagina2-S1 h1 span.typing::after{
+		height: 0.9em;
 	}
 
 	section#pagina2-S1 p:first-of-type{
