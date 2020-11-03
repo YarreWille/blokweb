@@ -19,7 +19,7 @@ header{
 	background-color: white;
 	width: 100%;
 	position: sticky;
-	border: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	top: 0;
 }
 
@@ -28,7 +28,17 @@ a.link-header{
 	padding:1.2em 0.5em 1em 0.5em;
 	text-decoration: none;
 	color: black;
+	outline: none;
 } 
+
+a.link-header:hover{
+	opacity: .5;
+}
+
+a.link-header:focus{
+	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+	border-radius: 0.3em;
+}
 
 li{
 	list-style-type: none;
@@ -42,12 +52,27 @@ form{
 	margin:1.2em 1em 1em 1em;
 }
 
+form:hover{
+	opacity: .5;
+}
+
+form:focus{
+	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+	border-radius: 0.3em;
+}
+
 /*mobiel nav bar in de header*/
 
 #link-logo{
 	float: left;
 	display: block;
 	padding: 0.9em 0.7em 1.2em 0.9em;
+	outline: none;
+}
+
+#link-logo:focus{
+	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+	border-radius: 0.3em;
 }
 
 #nav-logo{
@@ -58,8 +83,8 @@ form{
 
 nav{
 	display: flex;
-	position: relative;
 	padding-top: 0.5em;
+	background-color: white;
 }
 
 header nav button{
@@ -72,6 +97,11 @@ header nav button{
 	outline: none;
 }
 
+header nav button:focus{
+	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+	border-radius: 0.3em;
+}
+
 header nav button img{
 	width: 2.5em;
 	height: auto;
@@ -82,15 +112,21 @@ header nav button img{
 
 /*Humburger icon*/
 body header ul{
-	display: none;
+	position: absolute;
+	width: 375px;
+	top: -25em;
+	background-color: white;
+	display: ;
 	border-top: 1px solid grey;
 	padding: 0;
-	transition: 2s;
+	transition: 1s;
+	margin: 0;
+	z-index: -1;
 }
 
 body header ul.open{
 	display: block;
-	margin:0;
+	top: 4.5em;
 }
 
 header ul li a{
@@ -136,7 +172,7 @@ header ul li a{
 		right: 0;
 		display: flex;
 		border: none;
-		margin: 0;
+		margin: 0em 30em 0em 0em;
 		padding-top: 0.5em;
 
 	}
@@ -187,6 +223,7 @@ section#pagina2-S1 h1{
 
 section#pagina2-S1 h1 span.typing{
 	position: relative;
+	
 }
 
 section#pagina2-S1 h1 span.typing::after{
@@ -417,6 +454,7 @@ footer section:first-of-type ul{
 footer section:first-of-type ul li{
 	padding: 0em 1em 0em 0.5em;
 	margin-bottom: 0.7em;
+	position: relative;
 }
 
 footer section:first-of-type ul button{
@@ -432,14 +470,17 @@ footer section:first-of-type ul button{
 }
 
 footer section:first-of-type ul li ul{
-	display: none;
-	transition: 2s;
-	background-color: rgba(21,21,21,1);
-	padding: 0;
+	display: block;
+	position: absolute;
+	right: -20em;
+	transition: 0.5s;
+
 }
 
 footer section:first-of-type ul li ul.anders{
 	display: block;
+	position: inherit;
+	right: 0em;
 }
 
 footer section:first-of-type ul li ul li{

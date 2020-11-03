@@ -11,6 +11,30 @@ function navOpen(){
   uitvoeren.classList.toggle("open");
 }
 
+//Pagina2 kleine animatie main section1 h1//
+
+const texts = ['MIJNTELE2', 'MOBIEL ABONNEMENT', 'INTERNET, BELLEN & TV']
+let tellen = 0;
+let index = 0;
+let currentText = " ";
+let letter = " ";
+
+(function schrijven(){
+
+	if  (tellen === texts.length){
+		tellen = 0;
+	}
+	currentText = texts[tellen];
+	letter = currentText.slice(0, ++index);
+
+	document.querySelector(".typing").textContent = letter;
+	if (letter.length === currentText.length){
+		tellen++;
+		index = 0;
+	}
+	setTimeout(schrijven, 400);
+})();
+
 
 //Footer Button1//
 var button1 
